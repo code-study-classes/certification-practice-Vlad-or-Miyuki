@@ -33,8 +33,11 @@ export const swapHundredsAndTens = (str) => {
   return result;
 };
 
-export const getHundredsDigit = () => {
-
+export const  getHundredsDigit = (number) => {
+  if (number <= 999) {
+    return 0;
+  }
+  return Math.floor((number / 100) % 10);
 };
 
 export const getFullHours = (seconds) => {
@@ -46,5 +49,9 @@ export const getFullHours = (seconds) => {
 };
 
 export const getDayOfWeek = () => {
+
+};
+
+export const countSquares = () => {
 
 };
